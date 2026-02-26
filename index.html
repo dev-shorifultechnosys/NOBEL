@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel Basements and Bathrooms | Luxury Renovation Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nobel: {
+                            gold: '#D4AF37',
+                            'gold-light': '#F3E5AB',
+                            'gold-dark': '#AA8C2C',
+                            black: '#0A0A0A',
+                            dark: '#121212',
+                            gray: '#1E1E1E',
+                            white: '#FFFFFF',
+                            'off-white': '#F9F9F9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-gold': 'linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #AA8C2C 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0A0A0A; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+        .text-stroke { -webkit-text-stroke: 1px rgba(255,255,255,0.1); }
+        .gold-glow { box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+        .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .faq-content.open { max-height: 200px; }
+    </style>
+</head>
+<body class="bg-nobel-black text-white font-sans antialiased selection:bg-nobel-gold selection:text-nobel-black overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="header" class="fixed w-full z-50 bg-nobel-black/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
+                    <img class="h-12 w-auto object-contain" src="https://devshorifultechnosys.com/wp-content/uploads/2026/02/download.jpg" alt="elegant luxury logo design for Nobel Basements and Bathrooms, letter N monogram, gold and black color scheme, modern minimalist style, professional renovation company branding, transparent background" />
+                    <div class="flex flex-col">
+                        <span class="text-xl font-serif font-bold tracking-widest text-white group-hover:text-nobel-gold transition-colors">NOBEL</span>
+                        <span class="text-[0.6rem] tracking-[0.2em] uppercase text-gray-400">Basements & Bathrooms</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-medium text-white hover:text-nobel-gold transition-colors">Home</a>
+                    <a href="#bathrooms" class="text-sm font-medium text-gray-300 hover:text-nobel-gold transition-colors">Bathrooms</a>
+                    <a href="#basements" class="text-sm font-medium text-gray-300 hover:text-nobel-gold transition-colors">Basements</a>
+                    <a href="#gallery" class="text-sm font-medium text-gray-300 hover:text-nobel-gold transition-colors">Gallery</a>
+                    <a href="#about" class="text-sm font-medium text-gray-300 hover:text-nobel-gold transition-colors">About Us</a>
+                    <a href="#contact" class="text-sm font-medium text-gray-300 hover:text-nobel-gold transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA & Mobile Menu Button -->
+                <div class="flex items-center gap-4">
+                    <a href="#contact" class="hidden sm:flex items-center gap-2 px-6 py-2.5 rounded-full bg-nobel-gold text-nobel-black font-semibold text-sm hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+                        <span>Get a Quote</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    
+                    <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-nobel-gold focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-nobel-dark border-t border-white/10 absolute w-full">
+            <div class="px-4 pt-4 pb-8 space-y-2">
+                <a href="#home" class="block px-3 py-3 rounded-md text-base font-medium text-white bg-white/5 border-l-4 border-nobel-gold">Home</a>
+                <a href="#bathrooms" class="block px-3 py-3 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Bathrooms</a>
+                <a href="#basements" class="block px-3 py-3 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Basements</a>
+                <a href="#gallery" class="block px-3 py-3 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Gallery</a>
+                <a href="#about" class="block px-3 py-3 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">About Us</a>
+                <a href="#contact" class="block mt-4 text-center px-4 py-3 rounded-md text-base font-bold bg-nobel-gold text-nobel-black">Get Free Estimate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover opacity-40" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c078755abe-a0ba10ae51350c4bcb9b.png" alt="ultra-luxury modern home interior, architectural photography, cinematic lighting, gold and black accents" />
+            <div class="absolute inset-0 bg-gradient-to-r from-nobel-black via-nobel-black/90 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-nobel-black via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8 pt-10 lg:pt-0">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-nobel-gold/30 bg-nobel-gold/10 backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-nobel-gold animate-pulse"></span>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-nobel-gold">Premium Renovation Services</span>
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight text-white">
+                        Redefining <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-nobel-gold via-nobel-gold-light to-nobel-gold">Luxury Living</span>
+                        <br> in Your Home
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl font-light leading-relaxed border-l-2 border-nobel-gold pl-6">
+                        Transform your basement and bathrooms into exquisite spaces of comfort and elegance. Nobel delivers world-class craftsmanship with a modern, exclusive touch.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#gallery" class="px-8 py-4 bg-transparent border border-white/20 hover:border-nobel-gold text-white rounded-full font-medium transition-all duration-300 flex items-center justify-center gap-3 group">
+                            <span>View Our Work</span>
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform text-nobel-gold"></i>
+                        </a>
+                        <div class="flex items-center gap-4 px-6 py-2">
+                            <div class="flex -space-x-3">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6d0079dad7-bf08a41d2eb999b4a798.png" alt="Client" class="w-10 h-10 rounded-full border-2 border-nobel-black object-cover">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6d0079dad7-0ea7ad05e97f5a0d5d60.png" alt="Client" class="w-10 h-10 rounded-full border-2 border-nobel-black object-cover">
+                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6d0079dad7-81abdef0ca9f652a50f4.png" alt="Client" class="w-10 h-10 rounded-full border-2 border-nobel-black object-cover">
+                            </div>
+                            <div class="text-sm">
+                                <div class="flex text-nobel-gold text-xs mb-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-gray-400">Trusted by 500+ homeowners</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Contact Form (Lead Gen Engine) -->
+                <div class="lg:col-span-5 relative mt-12 lg:mt-0">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-nobel-gold to-white opacity-20 blur-xl rounded-2xl"></div>
+                    <div class="relative bg-nobel-gray/80 backdrop-blur-xl border border-white/10 p-6 md:p-8 rounded-2xl shadow-2xl">
+                        <div class="mb-6">
+                            <h3 class="text-xl md:text-2xl font-serif font-bold text-white mb-2">Get Your Free Estimate</h3>
+                            <p class="text-sm text-gray-400">Fill out the form below to start your dream renovation journey.</p>
+                        </div>
+                        
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-medium text-gray-400 mb-1 ml-1">First Name</label>
+                                    <input type="text" class="w-full bg-nobel-black border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors" placeholder="John">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-gray-400 mb-1 ml-1">Last Name</label>
+                                    <input type="text" class="w-full bg-nobel-black border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors" placeholder="Doe">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-medium text-gray-400 mb-1 ml-1">Email Address</label>
+                                <input type="email" class="w-full bg-nobel-black border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors" placeholder="john@example.com">
+                            </div>
+
+                            <div class="relative">
+                                <label class="block text-xs font-medium text-gray-400 mb-1 ml-1">Project Type</label>
+                                <select class="w-full bg-nobel-black border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors appearance-none cursor-pointer">
+                                    <option>Basement Renovation</option>
+                                    <option>Bathroom Remodel</option>
+                                    <option>Full Home Renovation</option>
+                                    <option>Other</option>
+                                </select>
+                                <div class="absolute right-4 bottom-3.5 pointer-events-none text-nobel-gold">
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </div>
+                            </div>
+
+                            <button type="button" class="w-full bg-nobel-gold hover:bg-white text-nobel-black font-bold py-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-nobel-gold/20 flex items-center justify-center gap-2 mt-2">
+                                <span>Request Consultation</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                            
+                            <p class="text-xs text-center text-gray-500 mt-4">
+                                <i class="fa-solid fa-lock mr-1"></i> Your information is secure. No spam.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce opacity-50">
+            <span class="text-xs text-gray-400 uppercase tracking-widest mb-2">Scroll</span>
+            <i class="fa-solid fa-chevron-down text-nobel-gold"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-10 border-y border-white/5 bg-nobel-black relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-serif font-bold text-white mb-1">15+</div>
+                    <div class="text-xs md:text-sm text-gray-400 uppercase tracking-wider">Years Experience</div>
+                </div>
+                <div class="text-center border-l border-white/10">
+                    <div class="text-3xl md:text-4xl font-serif font-bold text-white mb-1">500+</div>
+                    <div class="text-xs md:text-sm text-gray-400 uppercase tracking-wider">Projects Completed</div>
+                </div>
+                <div class="text-center border-l border-white/10">
+                    <div class="text-3xl md:text-4xl font-serif font-bold text-white mb-1">100%</div>
+                    <div class="text-xs md:text-sm text-gray-400 uppercase tracking-wider">Client Satisfaction</div>
+                </div>
+                <div class="text-center border-l border-white/10">
+                    <div class="text-3xl md:text-4xl font-serif font-bold text-white mb-1">5yr</div>
+                    <div class="text-xs md:text-sm text-gray-400 uppercase tracking-wider">Warranty Included</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bathrooms Section -->
+    <section id="bathrooms" class="py-32 bg-nobel-black relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-nobel-gold/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-nobel-gold/5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-sm font-bold text-nobel-gold uppercase tracking-[0.2em] mb-3">Bathroom Renovations</h2>
+                <h3 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">Your Personal Spa Sanctuary</h3>
+                <p class="text-gray-400 font-light text-lg leading-relaxed">Transform your daily routine into a luxurious experience with custom bathroom designs that blend elegance, functionality, and timeless sophistication.</p>
+            </div>
+
+            <!-- Featured Bathroom Project -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+                <div class="relative h-[500px] rounded-2xl overflow-hidden group">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/03dad54eeb-cdc05cee5679741273f2.png" alt="ultra-luxury modern spa bathroom, marble walls, gold fixtures, freestanding soaking tub, rainfall shower, heated floors, ambient lighting, architectural photography" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-nobel-black via-transparent to-transparent opacity-60"></div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-nobel-gold/30 bg-nobel-gold/10">
+                        <i class="fa-solid fa-award text-nobel-gold text-sm"></i>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-nobel-gold">Award-Winning Design</span>
+                    </div>
+                    
+                    <h4 class="text-3xl md:text-4xl font-serif font-bold text-white">Marble & Gold Masterpiece</h4>
+                    
+                    <p class="text-gray-300 leading-relaxed">This stunning bathroom renovation features Italian Calacatta marble, brushed gold fixtures, and a custom frameless glass enclosure. The centerpiece is a freestanding soaking tub positioned beneath a statement chandelier.</p>
+                    
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check-circle text-nobel-gold"></i>
+                            <span>Heated marble floors with radiant heating</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check-circle text-nobel-gold"></i>
+                            <span>Custom vanity with integrated LED lighting</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check-circle text-nobel-gold"></i>
+                            <span>Smart mirror with anti-fog technology</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check-circle text-nobel-gold"></i>
+                            <span>Rainfall and body spray shower system</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bathroom Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-nobel-gray border border-white/5 rounded-xl overflow-hidden group hover:border-nobel-gold/50 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/521bdb95f6-279c16baf12d8371b7da.png" alt="luxury walk-in shower with glass enclosure, rain shower head, marble tiles, modern bathroom design" />
+                    </div>
+                    <div class="p-6">
+                        <h5 class="text-xl font-serif font-bold text-white mb-2">Walk-In Showers</h5>
+                        <p class="text-gray-400 text-sm">Frameless glass enclosures, premium fixtures, and custom tile work for a spa-like experience.</p>
+                    </div>
+                </div>
+
+                <div class="bg-nobel-gray border border-white/5 rounded-xl overflow-hidden group hover:border-nobel-gold/50 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/95e75dec05-9412582e017039e0b4bf.png" alt="modern luxury bathroom vanity with double sinks, marble countertop, gold fixtures, LED mirror lighting" />
+                    </div>
+                    <div class="p-6">
+                        <h5 class="text-xl font-serif font-bold text-white mb-2">Custom Vanities</h5>
+                        <p class="text-gray-400 text-sm">Bespoke cabinetry with premium countertops, integrated storage, and designer hardware.</p>
+                    </div>
+                </div>
+
+                <div class="bg-nobel-gray border border-white/5 rounded-xl overflow-hidden group hover:border-nobel-gold/50 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b7b63f179f-0f2de762baf21ba14f6b.png" alt="luxury freestanding bathtub in elegant bathroom, floor-mounted tub filler, marble floors, chandelier above" />
+                    </div>
+                    <div class="p-6">
+                        <h5 class="text-xl font-serif font-bold text-white mb-2">Soaking Tubs</h5>
+                        <p class="text-gray-400 text-sm">Freestanding tubs, jetted systems, and air baths with premium finishes and fixtures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center">
+                <a href="#contact" class="inline-flex items-center gap-3 px-10 py-4 bg-nobel-gold text-nobel-black font-bold rounded-full hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <span>Start Your Bathroom Project</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Basements Section -->
+    <section id="basements" class="py-32 bg-nobel-dark relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-nobel-gold rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-nobel-gold rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-sm font-bold text-nobel-gold uppercase tracking-[0.2em] mb-3">Basement Renovations</h2>
+                <h3 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">Unlock Hidden Potential</h3>
+                <p class="text-gray-400 font-light text-lg leading-relaxed">Turn your underutilized basement into a stunning entertainment hub, home theater, guest suite, or multi-functional living space that adds value and luxury to your home.</p>
+            </div>
+
+            <!-- Basement Showcase -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+                <div class="space-y-6 order-2 lg:order-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-nobel-gold/30 bg-nobel-gold/10">
+                        <i class="fa-solid fa-star text-nobel-gold text-sm"></i>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-nobel-gold">Featured Project</span>
+                    </div>
+                    
+                    <h4 class="text-3xl md:text-4xl font-serif font-bold text-white">The Entertainment Haven</h4>
+                    
+                    <p class="text-gray-300 leading-relaxed">A complete basement transformation featuring a state-of-the-art home theater, custom wet bar with wine storage, gaming lounge, and a separate guest bedroom with ensuite bathroom.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-nobel-black/50 border border-white/5 p-4 rounded-lg">
+                            <div class="text-2xl font-bold text-nobel-gold mb-1">1,800</div>
+                            <div class="text-xs text-gray-400 uppercase tracking-wider">Sq Ft Renovated</div>
+                        </div>
+                        <div class="bg-nobel-black/50 border border-white/5 p-4 rounded-lg">
+                            <div class="text-2xl font-bold text-nobel-gold mb-1">8 Weeks</div>
+                            <div class="text-xs text-gray-400 uppercase tracking-wider">Completion Time</div>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check-circle text-nobel-gold"></i>
+                            <span>Acoustic soundproofing for theater room</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check-circle text-nobel-gold"></i>
+                            <span>Custom millwork and built-in cabinetry</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check-circle text-nobel-gold"></i>
+                            <span>Heated luxury vinyl plank flooring</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check-circle text-nobel-gold"></i>
+                            <span>Full bathroom with walk-in shower</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="relative h-[500px] rounded-2xl overflow-hidden group order-1 lg:order-2">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/559d49f92d-653c638ef51bd8bf8b55.png" alt="luxury finished basement with home theater, custom wet bar, modern lounge seating, ambient lighting, architectural photography" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-nobel-black via-transparent to-transparent opacity-60"></div>
+                    
+                    <div class="absolute top-6 right-6 bg-nobel-gold text-nobel-black px-4 py-2 rounded-full text-xs font-bold uppercase">Before & After Available</div>
+                </div>
+            </div>
+
+            <!-- Basement Features -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-nobel-black border border-white/5 p-6 rounded-xl text-center hover:border-nobel-gold/30 transition-all duration-300">
+                    <div class="w-16 h-16 bg-nobel-gray rounded-full flex items-center justify-center mx-auto mb-4 text-nobel-gold text-2xl">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <h5 class="text-white font-bold mb-2">Home Theaters</h5>
+                    <p class="text-gray-400 text-sm">Cinema-quality experience with acoustic design and premium AV systems.</p>
+                </div>
+
+                <div class="bg-nobel-black border border-white/5 p-6 rounded-xl text-center hover:border-nobel-gold/30 transition-all duration-300">
+                    <div class="w-16 h-16 bg-nobel-gray rounded-full flex items-center justify-center mx-auto mb-4 text-nobel-gold text-2xl">
+                        <i class="fa-solid fa-wine-glass"></i>
+                    </div>
+                    <h5 class="text-white font-bold mb-2">Wet Bars</h5>
+                    <p class="text-gray-400 text-sm">Custom bars with wine fridges, kegerators, and premium finishes.</p>
+                </div>
+
+                <div class="bg-nobel-black border border-white/5 p-6 rounded-xl text-center hover:border-nobel-gold/30 transition-all duration-300">
+                    <div class="w-16 h-16 bg-nobel-gray rounded-full flex items-center justify-center mx-auto mb-4 text-nobel-gold text-2xl">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <h5 class="text-white font-bold mb-2">Guest Suites</h5>
+                    <p class="text-gray-400 text-sm">Complete bedrooms with ensuite bathrooms and privacy.</p>
+                </div>
+
+                <div class="bg-nobel-black border border-white/5 p-6 rounded-xl text-center hover:border-nobel-gold/30 transition-all duration-300">
+                    <div class="w-16 h-16 bg-nobel-gray rounded-full flex items-center justify-center mx-auto mb-4 text-nobel-gold text-2xl">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h5 class="text-white font-bold mb-2">Home Gyms</h5>
+                    <p class="text-gray-400 text-sm">Dedicated fitness spaces with rubber flooring and mirrors.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center">
+                <a href="#contact" class="inline-flex items-center gap-3 px-10 py-4 bg-transparent border-2 border-nobel-gold text-nobel-gold font-bold rounded-full hover:bg-nobel-gold hover:text-nobel-black transition-all duration-300">
+                    <span>Transform Your Basement</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-32 bg-nobel-black relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sm font-bold text-nobel-gold uppercase tracking-[0.2em] mb-3">Project Gallery</h2>
+                <h3 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">Our Portfolio of Excellence</h3>
+                <p class="text-gray-400 font-light text-lg">Browse through our curated collection of completed projects showcasing world-class craftsmanship and innovative design solutions.</p>
+            </div>
+
+            <!-- Gallery Filter -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="px-6 py-2 bg-nobel-gold text-nobel-black font-semibold rounded-full text-sm transition-all">All Projects</button>
+                <button class="px-6 py-2 bg-nobel-gray text-white font-semibold rounded-full text-sm hover:bg-nobel-gold hover:text-nobel-black transition-all">Bathrooms</button>
+                <button class="px-6 py-2 bg-nobel-gray text-white font-semibold rounded-full text-sm hover:bg-nobel-gold hover:text-nobel-black transition-all">Basements</button>
+                <button class="px-6 py-2 bg-nobel-gray text-white font-semibold rounded-full text-sm hover:bg-nobel-gold hover:text-nobel-black transition-all">Full Renovations</button>
+            </div>
+
+            <!-- Masonry Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Gallery Item 1 -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-xl h-80">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c48bc67ebd-d975fd5e7afd4b6b50e8.png" alt="luxury modern bathroom renovation, marble tiles, gold fixtures, frameless glass shower, architectural photography" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-nobel-black via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="text-nobel-gold text-xs font-bold uppercase tracking-wider">Bathroom</span>
+                        <h4 class="text-white text-xl font-serif font-bold mt-1">Golden Elegance</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-xl h-80 lg:row-span-2 lg:h-auto">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/de4a8a35b8-f838cb9c1ab4b25cc277.png" alt="luxury finished basement entertainment room, home theater seating, ambient lighting, modern design, architectural photography" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-nobel-black via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="text-nobel-gold text-xs font-bold uppercase tracking-wider">Basement</span>
+                        <h4 class="text-white text-xl font-serif font-bold mt-1">Cinema Lounge</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-xl h-80">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c7b7554f8f-b6c08d9402e66efa128f.png" alt="luxury bathroom with freestanding tub, chandelier, marble floors, elegant design, architectural photography" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-nobel-black via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="text-nobel-gold text-xs font-bold uppercase tracking-wider">Bathroom</span>
+                        <h4 class="text-white text-xl font-serif font-bold mt-1">Spa Retreat</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-xl h-80">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3f1fd328c7-bbbe9bcb2c24c21e85be.png" alt="luxury basement wet bar with wine storage, bar seating, pendant lights, modern design, architectural photography" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-nobel-black via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="text-nobel-gold text-xs font-bold uppercase tracking-wider">Basement</span>
+                        <h4 class="text-white text-xl font-serif font-bold mt-1">Wine & Dine Bar</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-xl h-80">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2315f34f00-a29715ecd37ecfb7f9a8.png" alt="modern luxury powder room, vessel sink, gold mirror, marble walls, elegant lighting, architectural photography" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-nobel-black via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="text-nobel-gold text-xs font-bold uppercase tracking-wider">Bathroom</span>
+                        <h4 class="text-white text-xl font-serif font-bold mt-1">Powder Perfection</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-xl h-80">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c45286e6af-2b98f834d1c0a6f57439.png" alt="luxury basement guest bedroom suite, modern furniture, ambient lighting, ensuite bathroom, architectural photography" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-nobel-black via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="text-nobel-gold text-xs font-bold uppercase tracking-wider">Basement</span>
+                        <h4 class="text-white text-xl font-serif font-bold mt-1">Guest Haven</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center">
+                <button class="inline-flex items-center gap-3 px-10 py-4 border-2 border-white/20 text-white font-bold rounded-full hover:border-nobel-gold hover:text-nobel-gold transition-all duration-300">
+                    <span>Load More Projects</span>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Features Section -->
+    <section id="services" class="py-24 bg-nobel-black relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-1/2 left-0 w-64 h-64 bg-nobel-gold/5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-nobel-gold/5 rounded-full blur-3xl translate-y-1/2 translate-x-1/4"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-sm font-bold text-nobel-gold uppercase tracking-[0.2em] mb-3">Why Choose Nobel</h2>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">Craftsmanship Beyond Compromise</h3>
+                <p class="text-gray-400 font-light text-lg">We don't just renovate; we elevate your lifestyle through meticulous design and flawless execution.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-nobel-gray/50 border border-white/5 p-8 rounded-xl hover:border-nobel-gold/50 transition-all duration-300 group hover:bg-nobel-gray">
+                    <div class="w-14 h-14 bg-nobel-black rounded-lg flex items-center justify-center mb-6 text-nobel-gold text-2xl group-hover:scale-110 transition-transform shadow-lg border border-white/5">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-white mb-3">Bespoke Design</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Every project starts with a blank canvas. Our designers create unique layouts tailored specifically to your family's needs and aesthetic preferences.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-nobel-gray/50 border border-white/5 p-8 rounded-xl hover:border-nobel-gold/50 transition-all duration-300 group hover:bg-nobel-gray">
+                    <div class="w-14 h-14 bg-nobel-black rounded-lg flex items-center justify-center mb-6 text-nobel-gold text-2xl group-hover:scale-110 transition-transform shadow-lg border border-white/5">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-white mb-3">Master Craftsmanship</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Our team consists of vetted artisans and tradespeople who take immense pride in precision, ensuring every joint and tile is perfect.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-nobel-gray/50 border border-white/5 p-8 rounded-xl hover:border-nobel-gold/50 transition-all duration-300 group hover:bg-nobel-gray">
+                    <div class="w-14 h-14 bg-nobel-black rounded-lg flex items-center justify-center mb-6 text-nobel-gold text-2xl group-hover:scale-110 transition-transform shadow-lg border border-white/5">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-white mb-3">On-Time Delivery</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">We respect your time and home. Our project managers adhere to strict timelines, ensuring your renovation is completed efficiently without cutting corners.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-nobel-gray/50 border border-white/5 p-8 rounded-xl hover:border-nobel-gold/50 transition-all duration-300 group hover:bg-nobel-gray">
+                    <div class="w-14 h-14 bg-nobel-black rounded-lg flex items-center justify-center mb-6 text-nobel-gold text-2xl group-hover:scale-110 transition-transform shadow-lg border border-white/5">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-white mb-3">Transparent Pricing</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">No hidden fees or surprise costs. We provide detailed estimates and keep you informed throughout the entire process.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-nobel-gray/50 border border-white/5 p-8 rounded-xl hover:border-nobel-gold/50 transition-all duration-300 group hover:bg-nobel-gray">
+                    <div class="w-14 h-14 bg-nobel-black rounded-lg flex items-center justify-center mb-6 text-nobel-gold text-2xl group-hover:scale-110 transition-transform shadow-lg border border-white/5">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-white mb-3">Eco-Friendly Options</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Sustainable materials and energy-efficient solutions that not only look good but are good for the planet and your utility bills.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-nobel-gray/50 border border-white/5 p-8 rounded-xl hover:border-nobel-gold/50 transition-all duration-300 group hover:bg-nobel-gray">
+                    <div class="w-14 h-14 bg-nobel-black rounded-lg flex items-center justify-center mb-6 text-nobel-gold text-2xl group-hover:scale-110 transition-transform shadow-lg border border-white/5">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-white mb-3">5-Year Warranty</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">We stand behind our work. Enjoy peace of mind knowing your investment is protected by our comprehensive workmanship warranty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-nobel-dark border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-sm font-bold text-nobel-gold uppercase tracking-[0.2em] mb-3">Client Stories</h2>
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-8">Loved by Homeowners</h3>
+                    
+                    <div class="relative bg-nobel-gray p-8 rounded-2xl border border-white/5 shadow-2xl">
+                        <i class="fa-solid fa-quote-left text-4xl text-nobel-gold/20 absolute top-8 left-8"></i>
+                        <p class="text-gray-300 text-lg italic leading-relaxed relative z-10 mb-6 pt-6">
+                            "Nobel transformed our unfinished basement into a stunning apartment for my in-laws. The attention to detail was incredible, and the team was professional from day one. It feels like a 5-star hotel suite!"
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="Michael R." class="w-12 h-12 rounded-full object-cover border-2 border-nobel-gold">
+                            <div>
+                                <h4 class="text-white font-bold">Michael Reynolds</h4>
+                                <p class="text-nobel-gold text-xs uppercase tracking-wider">Toronto, ON</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 mt-8">
+                        <button class="w-10 h-10 rounded-full bg-white text-nobel-black flex items-center justify-center hover:bg-nobel-gold transition-colors">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button class="w-10 h-10 rounded-full bg-nobel-black border border-white/20 text-white flex items-center justify-center hover:border-nobel-gold hover:text-nobel-gold transition-colors">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative h-[600px] rounded-2xl overflow-hidden hidden lg:block">
+                    <div style="background-image: url('https://images.unsplash.com/photo-1620626012053-1c1ad719165f?q=80&w=1000&auto=format&fit=crop')" class="absolute inset-0 bg-cover bg-center"></div>
+                    <div class="absolute inset-0 bg-nobel-black/20"></div>
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute bottom-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl max-w-xs">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fa-solid fa-award text-nobel-gold text-xl"></i>
+                            <span class="text-white font-bold">Award Winning</span>
+                        </div>
+                        <p class="text-gray-200 text-xs">Recognized for excellence in basement renovation design 2024.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 bg-nobel-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-nobel-gold uppercase tracking-[0.2em] mb-3">Our Process</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-white">From Vision to Reality</h3>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-white/10 -translate-y-1/2 z-0"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-nobel-dark border-2 border-nobel-gold rounded-full flex items-center justify-center text-xl font-bold text-white mb-6 group-hover:bg-nobel-gold group-hover:text-nobel-black transition-colors duration-300 relative z-10">1</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Consultation</h4>
+                        <p class="text-sm text-gray-400 px-4">We meet to discuss your needs, style, and budget.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-nobel-dark border-2 border-gray-700 rounded-full flex items-center justify-center text-xl font-bold text-white mb-6 group-hover:border-nobel-gold group-hover:bg-nobel-gold group-hover:text-nobel-black transition-colors duration-300 relative z-10">2</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Design</h4>
+                        <p class="text-sm text-gray-400 px-4">Our experts create detailed 3D renderings of your space.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-nobel-dark border-2 border-gray-700 rounded-full flex items-center justify-center text-xl font-bold text-white mb-6 group-hover:border-nobel-gold group-hover:bg-nobel-gold group-hover:text-nobel-black transition-colors duration-300 relative z-10">3</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Build</h4>
+                        <p class="text-sm text-gray-400 px-4">Our skilled tradespeople bring the design to life.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-nobel-dark border-2 border-gray-700 rounded-full flex items-center justify-center text-xl font-bold text-white mb-6 group-hover:border-nobel-gold group-hover:bg-nobel-gold group-hover:text-nobel-black transition-colors duration-300 relative z-10">4</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Enjoy</h4>
+                        <p class="text-sm text-gray-400 px-4">Walk through your new space, delivered spotless and ready.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-nobel-dark border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-white">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="border border-white/10 rounded-lg overflow-hidden bg-nobel-black/50">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none group">
+                        <span class="font-medium text-white">How long does a typical basement renovation take?</span>
+                        <i class="fa-solid fa-plus text-nobel-gold text-sm group-hover:rotate-90 transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-400 text-sm">A typical basement renovation takes between 4 to 6 weeks, depending on the size of the space and the complexity of the finishes. We provide a detailed timeline before starting.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-white/10 rounded-lg overflow-hidden bg-nobel-black/50">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none group">
+                        <span class="font-medium text-white">Do you handle all the permits?</span>
+                        <i class="fa-solid fa-plus text-nobel-gold text-sm group-hover:rotate-90 transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-400 text-sm">Yes, absolutely. We manage the entire permit application and inspection process with your local municipality to ensure everything is code-compliant.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-white/10 rounded-lg overflow-hidden bg-nobel-black/50">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none group">
+                        <span class="font-medium text-white">Is there a warranty on your work?</span>
+                        <i class="fa-solid fa-plus text-nobel-gold text-sm group-hover:rotate-90 transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-400 text-sm">We offer a comprehensive 5-year warranty on all workmanship. Materials are covered by their respective manufacturer warranties, which we will provide to you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-32 bg-nobel-black relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-nobel-gold/5 to-transparent pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
+                <div>
+                    <h2 class="text-sm font-bold text-nobel-gold uppercase tracking-[0.2em] mb-3">About Nobel</h2>
+                    <h3 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Crafting Dreams Since 2009</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Nobel Basements and Bathrooms was founded on a simple principle: every homeowner deserves a space that reflects their unique style and exceeds their expectations. What started as a small team of passionate craftsmen has grown into one of the most trusted names in luxury home renovations.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                        Our commitment to excellence, attention to detail, and unwavering dedication to customer satisfaction has earned us numerous awards and hundreds of five-star reviews. We don't just renovate spaces—we transform lives.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-3 bg-nobel-gray border border-white/5 px-6 py-3 rounded-full">
+                            <i class="fa-solid fa-certificate text-nobel-gold text-xl"></i>
+                            <span class="text-white font-semibold">Licensed & Insured</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-nobel-gray border border-white/5 px-6 py-3 rounded-full">
+                            <i class="fa-solid fa-award text-nobel-gold text-xl"></i>
+                            <span class="text-white font-semibold">Award-Winning Team</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="relative h-[500px] rounded-2xl overflow-hidden">
+                        <img class="absolute inset-0 w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f5e0c31b1a-6768345dc81a40f4d706.png" alt="professional renovation team working on luxury home project, craftsmen installing finishes, modern construction site, team collaboration" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-nobel-black/60 to-transparent"></div>
+                    </div>
+                    
+                    <!-- Floating Stats Card -->
+                    <div class="absolute -bottom-8 -left-8 bg-nobel-gold p-8 rounded-xl shadow-2xl max-w-xs">
+                        <div class="text-5xl font-serif font-bold text-nobel-black mb-2">15+</div>
+                        <div class="text-nobel-black font-semibold">Years of Excellence in Luxury Renovations</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Values -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-nobel-gray rounded-full flex items-center justify-center mx-auto mb-4 text-nobel-gold text-3xl border border-white/5">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-white mb-3">Passion</h4>
+                    <p class="text-gray-400 text-sm">We genuinely love what we do, and it shows in every project we complete.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-nobel-gray rounded-full flex items-center justify-center mx-auto mb-4 text-nobel-gold text-3xl border border-white/5">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-white mb-3">Integrity</h4>
+                    <p class="text-gray-400 text-sm">Transparent pricing, honest communication, and ethical practices in everything we do.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-nobel-gray rounded-full flex items-center justify-center mx-auto mb-4 text-nobel-gold text-3xl border border-white/5">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-white mb-3">Quality</h4>
+                    <p class="text-gray-400 text-sm">We never compromise on materials, craftsmanship, or customer service.</p>
+                </div>
+            </div>
+
+            <!-- Meet The Team -->
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Meet Our Expert Team</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">Our talented professionals bring decades of combined experience to every project.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="relative h-64 rounded-xl overflow-hidden mb-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6d0079dad7-0ea7ad05e97f5a0d5d60.png" alt="Team Member" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-nobel-black to-transparent opacity-60"></div>
+                    </div>
+                    <h5 class="text-white font-bold text-lg">Michael Chen</h5>
+                    <p class="text-nobel-gold text-sm mb-2">Founder & Lead Designer</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-nobel-gold transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-nobel-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="text-center group">
+                    <div class="relative h-64 rounded-xl overflow-hidden mb-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6d0079dad7-bf08a41d2eb999b4a798.png" alt="Team Member" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-nobel-black to-transparent opacity-60"></div>
+                    </div>
+                    <h5 class="text-white font-bold text-lg">Sarah Martinez</h5>
+                    <p class="text-nobel-gold text-sm mb-2">Senior Project Manager</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-nobel-gold transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-nobel-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="text-center group">
+                    <div class="relative h-64 rounded-xl overflow-hidden mb-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="Team Member" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-nobel-black to-transparent opacity-60"></div>
+                    </div>
+                    <h5 class="text-white font-bold text-lg">David Thompson</h5>
+                    <p class="text-nobel-gold text-sm mb-2">Master Craftsman</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-nobel-gold transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-nobel-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="text-center group">
+                    <div class="relative h-64 rounded-xl overflow-hidden mb-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="Team Member" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-nobel-black to-transparent opacity-60"></div>
+                    </div>
+                    <h5 class="text-white font-bold text-lg">Emily Parker</h5>
+                    <p class="text-nobel-gold text-sm mb-2">Interior Design Specialist</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-nobel-gold transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-nobel-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 bg-nobel-dark relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-nobel-gold rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-nobel-gold rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sm font-bold text-nobel-gold uppercase tracking-[0.2em] mb-3">Get In Touch</h2>
+                <h3 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">Let's Start Your Project</h3>
+                <p class="text-gray-400 font-light text-lg">Ready to transform your space? Contact us today for a free consultation and detailed quote.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Contact Form -->
+                <div class="lg:col-span-2">
+                    <div class="bg-nobel-black border border-white/5 rounded-2xl p-8 md:p-12">
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 mb-2">First Name *</label>
+                                    <input type="text" class="w-full bg-nobel-gray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors" placeholder="John" required />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 mb-2">Last Name *</label>
+                                    <input type="text" class="w-full bg-nobel-gray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors" placeholder="Doe" required />
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 mb-2">Email Address *</label>
+                                    <input type="email" class="w-full bg-nobel-gray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors" placeholder="john@example.com" required />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 mb-2">Phone Number *</label>
+                                    <input type="tel" class="w-full bg-nobel-gray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors" placeholder="(555) 123-4567" required />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Project Type *</label>
+                                <select class="w-full bg-nobel-gray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors appearance-none cursor-pointer" required>
+                                    <option>Select a service</option>
+                                    <option>Bathroom Renovation</option>
+                                    <option>Basement Renovation</option>
+                                    <option>Full Home Renovation</option>
+                                    <option>Consultation Only</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Budget Range</label>
+                                <select class="w-full bg-nobel-gray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors appearance-none cursor-pointer">
+                                    <option>Select budget range</option>
+                                    <option>$20,000 - $50,000</option>
+                                    <option>$50,000 - $100,000</option>
+                                    <option>$100,000 - $200,000</option>
+                                    <option>$200,000+</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Project Details *</label>
+                                <textarea rows="5" class="w-full bg-nobel-gray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-nobel-gold transition-colors resize-none" placeholder="Tell us about your project vision, timeline, and any specific requirements..." required></textarea>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <input type="checkbox" id="consent" class="mt-1 w-4 h-4 rounded border-white/10 bg-nobel-gray text-nobel-gold focus:ring-nobel-gold" />
+                                <label for="consent" class="text-sm text-gray-400">I agree to receive communications from Nobel Basements and Bathrooms regarding my project inquiry.</label>
+                            </div>
+
+                            <button type="submit" class="w-full bg-nobel-gold hover:bg-white text-nobel-black font-bold py-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-3">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div class="space-y-6">
+                    <!-- Office Location -->
+                    <div class="bg-nobel-black border border-white/5 rounded-2xl p-8">
+                        <div class="w-14 h-14 bg-nobel-gold/10 rounded-lg flex items-center justify-center mb-4 text-nobel-gold text-2xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-2">Visit Our Showroom</h4>
+                        <p class="text-gray-400 text-sm mb-4">123 Renovation Boulevard<br/>Toronto, ON M5V 2T6<br/>Canada</p>
+                        <a href="#" class="text-nobel-gold text-sm font-semibold hover:underline inline-flex items-center gap-2">
+                            Get Directions <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="bg-nobel-black border border-white/5 rounded-2xl p-8">
+                        <div class="w-14 h-14 bg-nobel-gold/10 rounded-lg flex items-center justify-center mb-4 text-nobel-gold text-2xl">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-2">Call Us Directly</h4>
+                        <p class="text-gray-400 text-sm mb-4">Mon - Fri: 8:00 AM - 6:00 PM<br/>Sat: 9:00 AM - 4:00 PM</p>
+                        <a href="tel:+15551234567" class="text-nobel-gold text-xl font-bold hover:underline">(555) 123-4567</a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="bg-nobel-black border border-white/5 rounded-2xl p-8">
+                        <div class="w-14 h-14 bg-nobel-gold/10 rounded-lg flex items-center justify-center mb-4 text-nobel-gold text-2xl">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-2">Email Us</h4>
+                        <p class="text-gray-400 text-sm mb-4">We typically respond within 24 hours</p>
+                        <a href="mailto:info@nobelrenovations.com" class="text-nobel-gold font-semibold hover:underline break-all">info@nobelrenovations.com</a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="bg-nobel-black border border-white/5 rounded-2xl p-8">
+                        <h4 class="text-white font-bold text-lg mb-4">Follow Our Work</h4>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-12 h-12 rounded-lg bg-nobel-gray border border-white/5 flex items-center justify-center text-gray-400 hover:bg-nobel-gold hover:text-nobel-black hover:border-nobel-gold transition-all">
+                                <i class="fa-brands fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-lg bg-nobel-gray border border-white/5 flex items-center justify-center text-gray-400 hover:bg-nobel-gold hover:text-nobel-black hover:border-nobel-gold transition-all">
+                                <i class="fa-brands fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-lg bg-nobel-gray border border-white/5 flex items-center justify-center text-gray-400 hover:bg-nobel-gold hover:text-nobel-black hover:border-nobel-gold transition-all">
+                                <i class="fa-brands fa-pinterest-p text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-lg bg-nobel-gray border border-white/5 flex items-center justify-center text-gray-400 hover:bg-nobel-gold hover:text-nobel-black hover:border-nobel-gold transition-all">
+                                <i class="fa-brands fa-linkedin-in text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="mt-16 h-96 bg-nobel-black border border-white/5 rounded-2xl overflow-hidden">
+                <div style="background-image: url('https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?q=80&w=2000&auto=format&fit=crop')" class="w-full h-full bg-cover bg-center opacity-30"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-nobel-gold"></div>
+        <div style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2700&auto=format&fit=crop')" class="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-multiply"></div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-nobel-black mb-6">Ready to Transform Your Home?</h2>
+            <p class="text-nobel-black/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-medium">Schedule your free, no-obligation consultation today and let's discuss how we can bring your vision to life.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-10 py-4 bg-nobel-black text-white hover:bg-white hover:text-nobel-black rounded-full font-bold text-lg transition-all duration-300 shadow-xl">
+                    Get Your Free Quote
+                </a>
+                <a href="tel:+15551234567" class="px-10 py-4 bg-transparent border-2 border-nobel-black text-nobel-black hover:bg-nobel-black hover:text-nobel-gold rounded-full font-bold text-lg transition-all duration-300">
+                    Call (555) 123-4567
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-20 pb-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand Info -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <img class="h-8 w-auto object-contain" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/53e60fd044-fc9a03fa59192812761d.png" alt="elegant luxury logo design for Nobel Basements and Bathrooms, letter N monogram, gold and black color scheme, modern minimalist style, transparent background" />
+                        <span class="text-xl font-serif font-bold tracking-widest text-white">NOBEL</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Setting the standard for luxury basement and bathroom renovations. Quality craftsmanship, modern design, and exceptional service.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-nobel-gold hover:text-nobel-black transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-nobel-gold hover:text-nobel-black transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-nobel-gold hover:text-nobel-black transition-colors">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-nobel-gold transition-colors text-sm">Home</a></li>
+                        <li><a href="#bathrooms" class="text-gray-400 hover:text-nobel-gold transition-colors text-sm">Bathroom Renovations</a></li>
+                        <li><a href="#basements" class="text-gray-400 hover:text-nobel-gold transition-colors text-sm">Basement Renovations</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-nobel-gold transition-colors text-sm">Project Gallery</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-nobel-gold transition-colors text-sm">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-gray-400 text-sm">
+                            <i class="fa-solid fa-location-dot mt-1 text-nobel-gold"></i>
+                            <span>123 Renovation Blvd,<br>Toronto, ON M5V 2T6</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400 text-sm">
+                            <i class="fa-solid fa-phone text-nobel-gold"></i>
+                            <a href="tel:+15551234567" class="hover:text-white transition-colors">(555) 123-4567</a>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400 text-sm">
+                            <i class="fa-solid fa-envelope text-nobel-gold"></i>
+                            <a href="mailto:info@nobelrenovations.com" class="hover:text-white transition-colors">info@nobelrenovations.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-wider">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe to get the latest design trends and offers.</p>
+                    <form class="space-y-2">
+                        <input type="email" placeholder="Your email address" class="w-full bg-white/5 border border-white/10 rounded px-4 py-2.5 text-white text-sm focus:outline-none focus:border-nobel-gold">
+                        <button type="submit" class="w-full bg-nobel-gold text-nobel-black font-bold py-2.5 rounded text-sm hover:bg-white transition-colors">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-xs">© 2026 Nobel Basements & Bathrooms. All rights reserved.</p>
+                <div class="flex gap-6 text-xs text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Sticky Header Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg', 'bg-nobel-black/95');
+                header.classList.remove('bg-nobel-black/90');
+            } else {
+                header.classList.remove('shadow-lg', 'bg-nobel-black/95');
+                header.classList.add('bg-nobel-black/90');
+            }
+        });
+
+        // FAQ Toggle Logic
+        document.querySelectorAll('.border.rounded-lg button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('rotate-45');
+                    icon.classList.remove('text-white');
+                    icon.classList.add('text-nobel-gold');
+                } else {
+                    icon.classList.add('rotate-45');
+                    icon.classList.add('text-white');
+                    icon.classList.remove('text-nobel-gold');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
